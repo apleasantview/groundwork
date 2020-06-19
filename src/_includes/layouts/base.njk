@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "meta/metadata.njk" %}
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js"
+      defer
+    ></script>
+
+  </head>
+  <body>
+    <a href="#content" class="sr-only focus:not-sr-only">Skip to content</a>
+    {% include "components/header.njk" %}
+    <main id="content">
+      <!-- START page content -->
+      {% block content %}
+      <div class="container py-8">
+        <h1 class="text-xl md:text-4xl font-semibold leading-8 leading-loose">
+          {{ title }}
+        </h1>
+        <div class="text-lg">
+          {{ content | safe }}
+        </div>
+      </div>
+      {% endblock %}
+      <!-- END page content -->
+    </main>
+    {% include "components/footer.njk" %}
+    <script src="/js/index.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+---
+title: 'Groundwork: Start building!'
+---
+
+{% extends 'layouts/base.njk' %}
+{% block content %}
+<!-- START Groundwork frontpage content -->
+<div class="gw-hero mx-auto container">
+  <img draggable="false" src="/img/1faa8.svg" alt="a rock" loading="lazy" />
+</div>
+<div class="container py-8">
+  <h1 class="text-xl md:text-4xl font-semibold leading-8 leading-loose">
+    Start building!
+  </h1>
+  <div class="text-lg">
+    <p>
+      Groundwork is a minimal template for landing pages and microsites. Bob's liking it too!
+    </p>
+    <p>It comes with a few configurations:</p>
+    <ul>
+      <li>Eleventy</li>
+      <li>TailwindCSS (via PostCSS)</li>
+      <li>Alpine.js (via cdn)</li>
+    </ul>
+    <br />
+    <p>
+      <span class="link-chain"
+        ><a href="/resources"
+          >Visit the resources page for handy links!</a
+        ></span
+      >
+    </p>
+  </div>
+</div>
+<!-- END Groundwork frontpage content -->
+{% endblock %}

@@ -1,0 +1,23 @@
+/* Groundwork custom components */
+.gw-hero {
+  width: 40%;
+  height: auto;
+  @apply pt-2;
+}
+
+img.twemoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 0.07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+span.link-chain::after {
+  display: inline;
+  content: '\0020\01F517';
+}

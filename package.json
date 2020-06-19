@@ -1,0 +1,36 @@
+{
+  "name": "groundwork",
+  "version": "1.0.0",
+  "description": "*In the beginning there was nothing...*",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy && npm run postcss:prod",
+    "build:clean": "npm run clean && npm run build",
+    "clean": "rimraf dist",
+    "dev": "concurrently \"npx @11ty/eleventy --serve\" \"npm run postcss:dev\"",
+    "postcss:dev": "postcss ./src/css/index.css -o ./src/stylesheet.css -w",
+    "postcss:prod": "postcss ./src/css/index.css --env production -o ./dist/stylesheet.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@fullhuman/postcss-purgecss": "^2.2.0",
+    "alpinejs": "^2.3.5",
+    "concurrently": "^5.2.0",
+    "cssnano": "^4.1.10",
+    "dotenv": "^8.2.0",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "rimraf": "^3.0.2"
+  }
+}

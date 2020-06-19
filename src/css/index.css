@@ -1,0 +1,9 @@
+/* TODO: Replace or remove Groundwork styles with your custom styles */
+
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import './gw-base.css';
+@import 'tailwindcss/components';
+@import './gw-components.css';
+/* purgecss end ignore */
+@import 'tailwindcss/utilities';
