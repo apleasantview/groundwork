@@ -9,13 +9,13 @@
     ></script>
 
   </head>
-  <body>
+  <body class="gw-background">
     <a href="#content" class="sr-only focus:not-sr-only">Skip to content</a>
     {% include "components/header.njk" %}
-    <main id="content">
+    <main id="content" class="container">
       <!-- START page content -->
       {% block content %}
-      <div class="container py-8">
+      <div class="gw-plate">
         <h1 class="text-xl md:text-4xl font-semibold leading-8 leading-loose">
           {{ title }}
         </h1>
