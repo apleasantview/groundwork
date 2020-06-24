@@ -28,3 +28,7 @@ span.link-chain::after {
   display: inline;
   content: '\0020\01F517';
 }
+
+span.link-chain > a {
+  @apply break-all;
+}
