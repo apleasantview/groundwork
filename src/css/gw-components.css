@@ -7,7 +7,7 @@
 }
 
 .gw-plate {
-  background-color: hsla(0, 100%, 100%, 0.2);
+  background-color: hsla(0, 100%, 100%, 0.5);
   border-radius: 12px;
   @apply p-8;
 }
